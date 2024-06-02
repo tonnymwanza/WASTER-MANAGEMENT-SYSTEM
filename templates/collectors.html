@@ -1,9 +1,46 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title></title>
+        <link rel="stylesheet" href="{% static 'style.css' %}"/>
     </head>
     <body>
-        <div></div>
+        <div>
+            <div>
+                <h2 style="text-align: center; margin-top: 30px;font-size: 30px;">Register your organization</h2>
+            </div>
+            <div>
+                <div>
+                    <form method="POST" action="" class="form">
+                        {% csrf_token %}
+                        <div>
+                            {{form.name}}
+                        </div>
+                        <div>
+                            {{form.waste_sources}}
+                        </div>
+                        <div>
+                            {{form.waste_collection}}
+                        </div>
+                        <div>
+                            {{form.transportation}}
+                        </div>
+                        <div>
+                            {{form.waste_separation}}
+                        </div>
+                        <div>
+                            {{form.waste_treatement}}
+                        </div>
+                        <div>
+                            {{form.waste_disposal}}
+                        </div>
+                        <div>
+                            <button type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
