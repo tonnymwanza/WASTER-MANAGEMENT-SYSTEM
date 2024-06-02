@@ -21,3 +21,8 @@ class ContactView(View):
 
     def get(self, request):
         return render(request, 'contact.html')
+    
+class CollectorsView(View):
+
+    def get(self, request):
+        return render(request, 'collectors.html')

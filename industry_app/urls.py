@@ -4,6 +4,7 @@ from . views import HomeView
 from . views import AboutView
 from . views import SolutionsView
 from . views import ContactView
+from . views import CollectorsView
 # my urls
 
 urlpatterns = [
@@ -11,4 +12,5 @@ urlpatterns = [
     path('about', AboutView.as_view(), name='about'),
     path('solutions', SolutionsView.as_view(), name='solutions'),
     path('contact', ContactView.as_view(), name='contact'),
+    path('collectors', CollectorsView.as_view(), name='collectors'),
 ]

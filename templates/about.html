@@ -46,8 +46,7 @@
 		</div>
 		<div class="site-navbar">
 			<!-- Logo -->
-			<a href="index.html" class="site-logo">
-				<img src="{% static 'img/logo.png' %}" alt="">
+			<a href="" class="site-logo">
 			</a>
 			<div class="header-right">
 				<div class="header-info-box">
@@ -62,6 +61,7 @@
 					<li><a href="{% url 'home' %}">Home</a></li>
 					<li class="active"><a href="{% url 'about' %}">About us</a></li>
 					<li><a href="{% url 'solutions' %}">Solutions</a></li>
+					<li><a href="{% url 'collectors' %}">Collectors</a></li>
 					<li><a href="{% url 'contact' %}">Contact</a></li>
 				</ul>
 			</nav>
@@ -76,7 +76,11 @@
 			<div class="row">
 				<div class="col-lg-7">
 					<h2>About us</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. </p>
+					<p>We offer a streamlined process that organizations use to dispose off, reduce, reuse and prevent waste.
+						We implement comprehensive strategies to efficiently manaage wastes from their origin until their final
+						disposal. Possible waste disposal methods are recycling, composting and incineration, landfills, bioremediation, waste to energy, and waste
+						 minimization.
+					</p>
 					<a href="" class="site-btn">Contact us</a>
 				</div>
 			</div>
@@ -94,15 +98,18 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="about-text">
-						<h2>We produce or supply Goods, & Services</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec consequat arcu et commodo interdum. Vivamus posuere lorem lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. </p>
+						<h2>Welcome to Industry Management System, where efficiency meets innovation.</h2>
+						<p>We are dedicated to revolutionizing waste management practices ensuring a cleaner, greener future for genereations
+							 to come. We understand the critical importance of waste disposal .Our mission is to provide innovative solutions that minimize environmental impact
+							 while maximizing resource recovery. Whether it's recycling, composting or safe disposal, we strive to handle waste in the most 
+							sustainable and efficient manner possible. </p>
 						<div class="about-sign">
 							<div class="sign">
 								<img src="{% static 'img/sign.png' %}" alt="">
 							</div>
 							<div class="sign-info">
-								<h5>Michael Smith</h5>
-								<span>CEO Industrial INC</span>
+								<h5>Samantha</h5>
+								<span>Waste  Management System</span>
 							</div>
 						</div>
 					</div>
@@ -123,8 +130,7 @@
 						</div>
 						<div class="milestone-text">
 							<span>Clients</span>
-							<h2>725</h2>
-							<p>Nam ornare ipsum </p>
+							<h2>25</h2>
 						</div>
 					</div>
 				</div>
@@ -136,7 +142,6 @@
 						<div class="milestone-text">
 							<span>Growth</span>
 							<h2>45%</h2>
-							<p>Nam ornare ipsum </p>
 						</div>
 					</div>
 				</div>
@@ -148,7 +153,6 @@
 						<div class="milestone-text">
 							<span>Projects</span>
 							<h2>59</h2>
-							<p>Nam ornare ipsum </p>
 						</div>
 					</div>
 				</div>
@@ -158,9 +162,8 @@
 							<img src="{% static 'img/icons/worker.png' %}" alt="">
 						</div>
 						<div class="milestone-text">
-							<span>Emploees</span>
+							<span>Employees</span>
 							<h2>138</h2>
-							<p>Nam ornare ipsum </p>
 						</div>
 					</div>
 				</div>
@@ -174,7 +177,6 @@
 		<div class="container">
 			<div class="team-text">
 				<h2>Our Amazing Team</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est. Nam ornare ipsum ac accumsan auctor. Donec consequat arcu et commodo interdum. Vivamus posuere lorem lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in est quis, blandit sollicitudin est.</p>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
@@ -182,8 +184,7 @@
 						<img src="{% static 'img/team/1.jpg' %}" alt="">
 						<div class="member-info">
 							<h3>Michael Smith</h3>
-							<p>Engeneer Chemist </p>
-							<a href="#" class="site-btn">See C.V.</a>
+							<p>Environmental Engneer</p>
 						</div>
 					</div>
 				</div>
@@ -192,8 +193,7 @@
 						<img src="{% static 'img/team/2.jpg' %}" alt="">
 						<div class="member-info">
 							<h3>Jessica Steing</h3>
-							<p>Engeneer Chemist </p>
-							<a href="#" class="site-btn">See C.V.</a>
+							<p>Waste Management Specialist</p>
 						</div>
 					</div>
 				</div>
@@ -202,8 +202,7 @@
 						<img src="{% static 'img/team/3.jpg' %}" alt="">
 						<div class="member-info">
 							<h3>Chris Williams</h3>
-							<p>Engeneer Chemist </p>
-							<a href="#" class="site-btn">See C.V.</a>
+							<p>Recycling Coordinator</p>
 						</div>
 					</div>
 				</div>
@@ -219,7 +218,7 @@
 			<div class="row">
 				<div class="col-lg-4 order-2 order-lg-1 p-0">
 					<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. 
+Samantha&copy;<script>document.write(new Date().getFullYear()); </script> All rights reserved. 
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 				</div>
 			</div>
