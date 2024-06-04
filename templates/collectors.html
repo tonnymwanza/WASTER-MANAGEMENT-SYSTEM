@@ -12,12 +12,13 @@
             </div>
             <div>
                 <div>
-                    <form method="POST" action="" class="form">
+                    <form method="POST" action="{% url 'collectors' %}" class="form">
                         {% csrf_token %}
                         <div>
                             {{form.name}}
                         </div>
                         <div>
+                            <label style="font-style: italic;">Choose the waste source</label>
                             {{form.waste_sources}}
                         </div>
                         <div>
@@ -35,6 +36,9 @@
                         <div>
                             {{form.waste_disposal}}
                         </div>
+                        {% for message in messages %}
+                        <span style="color: blue;text-align: center;">{{message}}</span>
+                        {% endfor %}
                         <div>
                             <button type="submit">Register</button>
                         </div>
